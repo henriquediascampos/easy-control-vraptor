@@ -1,0 +1,19 @@
+{
+  "name": "vraptor-blank-project",
+  "version": "1.0.0",
+  "description": "This is a blank project to help you to use VRaptor. You can easily import in you IDE as Maven project.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.23.6",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1"
+  },
+  "dependencies": {
+    "npm": "^5.8.0"
+  }
+}
