@@ -9,13 +9,22 @@
 <title>pais</title>
 </head>
 <body>
-    <fieldset > <title>teste</title>
+    <fieldset > <title>busca</title>
         <br>
     <h1 class="text-size-15">objeto salvo: <br> ${variable}</h1>
     <br>      
     <input id="nomePais" type="text"> 
     <br>    
     <button id="btnBuscar">buscar</button>
+</fieldset>
+
+<fieldset > <title>salvar</title>
+    <br>
+<h1 class="text-size-15">objeto salvo: <br> ${variable}</h1>
+<br>      
+<input id="pais" type="text"> 
+<br>    
+<button id="btnSalvar">salvar</button>
 </fieldset>
 </body>
 </html>
