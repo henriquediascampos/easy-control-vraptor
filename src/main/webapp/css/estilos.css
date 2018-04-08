@@ -1,3 +1,16 @@
-.text-size-15{
-    font-size: 30px;
+
+
+.div-cabecalho {
+    background-color:rgb(63, 60, 60);
+    height: 60px;
+    width: 1366px;
+    margin-top: -9px;
+    margin-left: -8px;
+}
+ 
+.teste{
+    background-color: rgb(156, 148, 163);
+    width: 1300px;
+    margin: auto;
+    height: 400px;
 }

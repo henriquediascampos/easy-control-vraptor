@@ -5,17 +5,25 @@
 $(document).ready(function(){
     $("#btnBuscar").click(function(){
       var nome = $("#nomePais").val();
-      teste(nome);
+      buscar(nome);
+    }); 
+
+    $("#btnSalvar").click(function(){
+      var nome = $("#pais").val();
+      salvar(nome);
     }); 
 });
 
-function buscar(){ 
-  $.get("pais/buscar", function(){
+function buscar(nome){ 
+  data = {nome};
+  $.get("pais/bucarNome", data,
+   function(retorno){
+    alert(retorno);
   });
 
 }
 
-function teste(nome){
+function salvar(nome){
   data = {nome};
   $.get("pais/salvar", data,
   function(data){

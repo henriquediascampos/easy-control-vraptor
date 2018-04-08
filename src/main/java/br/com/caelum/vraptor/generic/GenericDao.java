@@ -12,7 +12,6 @@ import org.hibernate.Transaction;
 import org.hibernate.criterion.Restrictions;
 
 import br.com.caelum.vraptor.hibernateUtil.HibernateUtil;
-import br.com.caelum.vraptor.modelos.pais.Pais;
 
 public abstract class GenericDao<T>{
 
@@ -34,7 +33,7 @@ public abstract class GenericDao<T>{
 			transaction = session.beginTransaction();
 			session.save(clazz);
 			transaction.commit();
-		} catch (Exception e) {
+		} catch (Exception e)  {
 		}finally {
 			session.close();
 		}
@@ -54,7 +53,7 @@ public abstract class GenericDao<T>{
 	}
 	
 	public List<T> lista() {
-		session = HibernateUtil.getFabricaDeSessoes().openSession();
+	/*	session = HibernateUtil.getFabricaDeSessoes().openSession();
 		try {	
 			Criteria criteria = session.createCriteria(Pais.class, "pais");
 			return criteria.list();
@@ -63,6 +62,7 @@ public abstract class GenericDao<T>{
 			throw e;
 		}finally {
 			session.close();
-		}
+		}*/
+		return null;
 	}
 }

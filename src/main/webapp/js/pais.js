@@ -5,18 +5,17 @@
 $(document).ready(function(){
     $("#btnBuscar").click(function(){
       var pais = $("#nomePais").val();
-      teste(pais);
+      buscar(pais);
     });
 });
 
-function buscar(){
-  $.get("pais/buscar", function(){
-      alert("patos");
+function buscar(nome){
+    $.get("pais/bucarNome", nome, function(retorno){
+        alert(retorno);
   });
 
 }
-
-function teste(pais){
+function salvar(pais){
   nome= pais;
   data = {nome};
   $.get("pais/salvar", data,

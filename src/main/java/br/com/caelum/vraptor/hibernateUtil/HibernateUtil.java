@@ -1,6 +1,7 @@
 package br.com.caelum.vraptor.hibernateUtil;
 
 
+import javax.annotation.PostConstruct;
 import javax.enterprise.context.ApplicationScoped;
 import javax.enterprise.context.RequestScoped;
 import javax.enterprise.inject.Produces;
@@ -22,10 +23,13 @@ public class HibernateUtil {
 		return session;
 	}
 	
+	// @Produces
+	// @RequestScoped
 	public static SessionFactory getFabricaDeSessoes() {
 		return fabricaDeSessoes;
 	}
 
+	//@PostConstruct
 	private static SessionFactory criarFabricaDeSessoes() {
 		try {
 			Configuration configuracao =new Configuration().configure();
