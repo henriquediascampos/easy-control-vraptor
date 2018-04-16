@@ -27,4 +27,9 @@ public class IndexController {
 	public void index() {
 		result.include("variable", "VRaptor!");
 	}
+
+	@Path("/indexTeste")
+	public void indexTeste(){
+		result.include("variable", "VRaptor!");
+	}
 }
