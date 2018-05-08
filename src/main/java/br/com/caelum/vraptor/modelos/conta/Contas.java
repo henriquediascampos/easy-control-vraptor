@@ -1,6 +1,4 @@
-package br.com.caelum.vraptor.modelos.pais;
-
-import java.io.Serializable;
+package br.com.caelum.vraptor.modelos.conta;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -10,19 +8,20 @@ import javax.persistence.Id;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
+import br.com.caelum.vraptor.modelos.modeloGenerico.ModeloGenerico;
+
 @SuppressWarnings("serial")
 @Entity
-@Table(name = "pais")
-public class Pais implements Serializable{
-
+@Table(name = "contas")
+public class Contas extends ModeloGenerico{
 	@Id
-	@SequenceGenerator(name = "mysequence", sequenceName = "seq_pais_id", initialValue=1, allocationSize=1)
+	@SequenceGenerator(name = "mysequence", sequenceName = "seq_cont_id", initialValue = 1, allocationSize = 1)
 	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "mysequence")
-	@Column(name = "id")
+	@Column(name="cont_id")
 	private Long id;
-	
-	@Column(name = "pais_nome")
-	private String nome;
+
+	@Column
+	private String descricao;
 
 	public Long getId() {
 		return id;
@@ -32,11 +31,11 @@ public class Pais implements Serializable{
 		this.id = id;
 	}
 
-	public String getNome() {
-		return nome;
+	public String getDescricao() {
+		return descricao;
 	}
 
-	public void setNome(String nome) {
-		this.nome = nome;
+	public void setDescricao(String descricao) {
+		this.descricao = descricao;
 	}
 }

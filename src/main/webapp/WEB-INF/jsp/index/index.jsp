@@ -6,20 +6,24 @@
 <title>VRaptor Blank Project</title>
 </head>
 <body>
-	<div>
-			<ul>
+<div>
+	<header>
+		<div class="menu">
+			<div class="logo">
+				<img src="./imagens/logo.png" alt="">
+			</div>
+			<div>
+				<ul>
 					<li><a href="">HOME</a></li>
 					<li><a href="">TESTE 1</a></li>
 					<li><a href="">TESTE 2</a></li>
 					<li><a href="">TESTE 3</a></li>
 				</ul>
-	<!-- <header class="div-cabecalho">
-		<ul>
-			<li><a href="">HOME</a></li>
-			<li><a href="">TESTE 1</a></li>
-			<li><a href="">TESTE 2</a></li>
-			<li><a href="">TESTE 3</a></li>
-		</ul>
+			</div>
+			<div>
+				<img class="div-lapis" src="./imagens/lapis.png" alt="">
+			</div>
+		</div>
 	</header>
 	<div class="teste" >teste2</div>
 	<div class="menu-lateral"></div>
@@ -27,7 +31,7 @@
 	<footer></footer>
 	</div>
 	começando !! ${variable}
-	<br><br><br><br> -->
+	<br><br><br><br> 
 	
 </body>
 </html>

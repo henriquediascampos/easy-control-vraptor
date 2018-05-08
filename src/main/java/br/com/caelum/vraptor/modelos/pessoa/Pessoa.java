@@ -1,6 +1,5 @@
 package br.com.caelum.vraptor.modelos.pessoa;
 
-import java.io.Serializable;
 import java.util.Date;
 
 import javax.persistence.Column;
@@ -11,9 +10,12 @@ import javax.persistence.Id;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
+import br.com.caelum.vraptor.modelos.modeloGenerico.ModeloGenerico;
+
+@SuppressWarnings("serial")
 @Entity
 @Table(name = "pessoa")
-public class Pessoa implements Serializable{
+public class Pessoa extends ModeloGenerico{
 	@Id
 	@SequenceGenerator(name = "mysequence", sequenceName = "seq_pess_id", initialValue = 1, allocationSize = 1)
 	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "mysequence")
@@ -28,9 +30,6 @@ public class Pessoa implements Serializable{
 
 	@Column(name= "dt_nacimento")
 	private Date dtNacimento;
-	
-	@Column(name= "excluido")
-	private Character excluido;
 	
 	public Long getId() {
 		return id;
@@ -54,14 +53,6 @@ public class Pessoa implements Serializable{
 
 	public void setDtNacimento(Date dtNacimento) {
 		this.dtNacimento = dtNacimento;
-	}
-
-	public Character getExcluido() {
-		return excluido;
-	}
-
-	public void setExcluido(Character excluido) {
-		this.excluido = excluido;
 	}
 
 	public String getSobrenome() {
