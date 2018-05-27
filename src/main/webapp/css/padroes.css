@@ -1,0 +1,38 @@
+.div-inline{
+    display: inline;
+}
+
+.div-flex{
+    display: flex;
+}
+
+.div-larg-alt{
+    height: 100%;
+    width: 100%;
+}
+
+/* PADDING */
+.padding-t-p{ padding: 15px 0 15px 0;}
+.padding-l-r{ padding: 0 15px 0 15px;}
+
+.padding-t{ padding-top: 15px;}
+.padding-r{ padding-right: 15px;}
+.padding-b{ padding-bottom: 15px;}
+.padding-l{ padding-left: 15px;}
+
+
+.esconder{
+    visibility: hidden
+}
+
+.ocultar{
+    display: none;
+}
+
+.elemento-para-tras{
+    z-index: -1;
+}
+
+.elemento-para-frente{
+    z-index: 1;
+}
