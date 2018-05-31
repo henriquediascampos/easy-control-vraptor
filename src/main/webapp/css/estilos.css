@@ -4,8 +4,7 @@ body{
 }
 
 .view{
- height: 900px;
- background-color: slateblue;
+ background-color: rgb(105, 235, 137);
 }
 
 /* menu horizonte*/
@@ -73,34 +72,37 @@ li a:hover{
     background-color: rgb(219, 233, 188);
 }
 
-section{
-
-}
-
 .menu-lateral{
-    height: 100%;
     width: 50px;
     background-color: rgb(243, 236, 236);
     transition: 0.5s;
-    padding: 18px 5px 0 0;
+    padding: 5px 7px 0 0;
+    border-radius: 5px;
 }
 
 .btn-menu {
-    float: right;
+    align-items: flex-end;    
     cursor:pointer;
     height: 40px;
     width: 40px;
+    right: 0;
 } 
 
 .is-open{
-    width: 250px;
+    width: 300px;
 }
 
+/* VIEW PORT */
 .view-port{
-    background-color: aqua
+    background-color: aqua;
 }
 
+#caderneta{
+    width: 50%;
+    height: 50% !important;
+}
+ 
 .rodape{
-    height: 30px;
+    height: 50px;
     background-color: blue;
 }

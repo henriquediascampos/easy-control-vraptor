@@ -7,7 +7,7 @@
 <title>VRaptor Blank Project</title>
 </head>
 <body>
-<div class="view">
+<div class="view larg-alt-full">
 	<header>
 		<div class="menu">
 			<div class="div-flex  div-nav">
@@ -23,21 +23,28 @@
 					</ul>
 				</div>
 			</div>
-			<div>
+			<div >
 				<img class="div-lapis" src="./imagens/lapis.png" alt="">
 			</div>
 		</div>
 	</header>
-	<section class="div-inline">
-		<div class="div-larg-alt div-flex padding-t">
-			<div class="menu-lateral">
-				<img id="menu-open" class="btn-menu" src="./imagens/menuicon.png" alt="Menu">
+	<section class="div-flex flex-colunm larg-alt-full">
+		<div class=" div-flex larg-alt-full padding-t">
+			<div class="menu-lateral div-flex flex-colunm">
+				<div class="div-flex flex-row-rev">
+					<img id="menu-open" class="btn-menu" src="./imagens/menuicon.png" alt="Menu">
 				
-				<img id="menu-close"  class="btn-menu ocultar" src="./imagens/close_icon.png" alt="Menu">				
+					<img id="menu-close"  class="btn-menu ocultar" src="./imagens/close_icon.png" alt="Menu">				
+				</div>
 			</div>
-				<div class="view-port div-larg-alt">
+			<div id="view-port" class="view-port div-flex larg-alt-full content-center">
+				<div class="caderneta div-flex larg-alt-full content-center">
+					<img id="caderneta" src="./imagens/caderneta.png" alt="">
+					<!-- <input type="text" class="teste"> -->
+				</div>
 			</div>
 		</div>
+		<!-- <div class="rodape"></div> -->
 		<footer class="div-flex rodape"></footer>
 	</section>
 </div>
