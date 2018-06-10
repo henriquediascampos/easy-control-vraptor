@@ -4,7 +4,7 @@ body{
 }
 
 .view{
- background-color: rgb(105, 235, 137);
+ /* background-color: rgb(105, 235, 137); */
 }
 
 /* menu horizonte*/
@@ -58,6 +58,7 @@ li a{
     padding: 8px 10px;
     display: block;
     text-align: center;
+    cursor: pointer;
 
 }
 
@@ -94,14 +95,16 @@ li a:hover{
 
 /* VIEW PORT */
 .view-port{
-    background-color: aqua;
+    /* background-color: aqua; */
 }
 
-#caderneta{
-    width: 50%;
-    height: 50% !important;
+.teste{
+    width: 700px; 
+    height: 800px !important;
+    /* background-color: rgb(81, 255, 0); */
+    /* background-image: url("../imagens/caderneta.png"); */
 }
- 
+
 .rodape{
     height: 50px;
     background-color: blue;

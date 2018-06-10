@@ -1,4 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<%@ taglib uri = "http://java.sun.com/jsp/jstl/core" prefix = "c" %>
+
 <html lang="pt-br">
 <head>
 <link rel="stylesheet" href="css/estilos.css">
@@ -7,6 +10,9 @@
 <title>VRaptor Blank Project</title>
 </head>
 <body>
+	<script>
+		var teste = "../login/login.jsp";
+	</script>
 <div class="view larg-alt-full">
 	<header>
 		<div class="menu">
@@ -16,8 +22,8 @@
 				</div>
 				<div class="div-ul">
 					<ul>
-						<li><a href="">HOME</a></li>
-						<li><a href="">TESTE 1</a></li>
+						<li><a id="home">HOME</a></li>
+						<li><a id="login">LOGIN</a></li>
 						<li><a href="">TESTE 2</a></li>
 						<li><a href="">TESTE 3</a></li>
 					</ul>
@@ -38,13 +44,12 @@
 				</div>
 			</div>
 			<div id="view-port" class="view-port div-flex larg-alt-full content-center">
-				<div class="caderneta div-flex larg-alt-full content-center">
-					<img id="caderneta" src="./imagens/caderneta.png" alt="">
-					<!-- <input type="text" class="teste"> -->
+				<div>
+					<jsp:include page =  "../login/login.jsp" /> 
 				</div>
+
 			</div>
 		</div>
-		<!-- <div class="rodape"></div> -->
 		<footer class="div-flex rodape"></footer>
 	</section>
 </div>
@@ -52,3 +57,4 @@
 </html>
 <script type="text/javascript"  src="jquery-3.3.1.min.js"></script>
 <script type="text/javascript"  src="js/pages/index/index.js"></script>
+			

@@ -28,8 +28,8 @@ public class IndexController {
 		result.include("variable", "VRaptor!");
 	}
 
-	@Path("/indexTeste")
+	@Path("/login.jsp")
 	public void indexTeste(){
-		result.include("variable", "VRaptor!");
+		result.include("login.jsp");
 	}
 }

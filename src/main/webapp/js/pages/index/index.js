@@ -18,6 +18,10 @@ function evenct(){
             $("#menu-open").addClass("ocultar");
         }
     });
+
+    $('#login').click(()=>{
+        $('#view-port').load("../login/login.jsp");
+    });
 }
 
 $(document).ready(function(){

@@ -12,6 +12,5 @@ public class Start {
 		Session sessao = HibernateUtil.getFabricaDeSessoes().openSession();
 		sessao.close();
 		HibernateUtil.getFabricaDeSessoes().close();
-
 	}
 }
