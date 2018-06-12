@@ -27,7 +27,7 @@ public class PaisController {
 		this.result = result;
 	}
 	
-	@Path("/pais")
+	@Path("/pais.jsp")
 	public void pais() {
 		result.include("variable", "pais!");
 	}

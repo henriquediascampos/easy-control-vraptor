@@ -27,15 +27,14 @@ public class LoginController {
 		this.result = result;
 	}
 	
-	@Path("/login")
+	@Path("/login.jsp")
 	public void login() {
 		result.include("variable", "login!");
 	}
 	
-	@Get("/login/busca")
-	public void busca() {
-		List<Login> login = loginDao.lista();
-		result.use(Results.json()).from(login).recursive().serialize();
+	@Get("/login/fazerLogin/")
+	public void fazerLogin() {
+		result.use(Results.json()).from(true).recursive().serialize();
 	}
 	
 	@Get("/login/buscaId")
