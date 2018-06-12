@@ -11,7 +11,7 @@ body{
 .menu{
     width: 100%;
     height: 150px;
-    background-color: rgb(219, 233, 188);
+    background-color: rgba(172, 235, 38, 0.871);
 }
 
 .div-nav{
@@ -39,21 +39,21 @@ body{
     top: 5%;
 }
 
-ul {
+.div-ul > ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     display: inline-flex;
 }
 
-li{
+.div-ul > ul > li{
     display: inline;
     background-color: rgb(221, 224, 11);  
     border-radius: 4px;
     margin-left: 15px;
 }
 
-li a{
+.div-ul > ul > li a{
     /* color: white; */
     padding: 8px 10px;
     display: block;
@@ -91,18 +91,24 @@ li a:hover{
 
 .is-open{
     width: 300px;
+    z-index: 1;
+}
+
+.list-itens{
+    list-style-type: none;
+    padding: 0px;
+}
+
+.item-menu{
+    width: 100%;
+    background-color: rgb(221, 224, 11);
 }
 
 /* VIEW PORT */
 .view-port{
-    /* background-color: aqua; */
-}
-
-.teste{
+    background-color: aqua;
     width: 700px; 
-    height: 800px !important;
-    /* background-color: rgb(81, 255, 0); */
-    /* background-image: url("../imagens/caderneta.png"); */
+    height: 800px;
 }
 
 .rodape{

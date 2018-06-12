@@ -28,4 +28,4 @@
 </body> 
 </html>
 <script type="text/javascript"  src="jquery-3.3.1.min.js"></script>
-<script type="text/javascript"  src="js/pages/pais.js"></script>
+<script type="text/javascript"  src="js/pages/pais/pais.js"></script>

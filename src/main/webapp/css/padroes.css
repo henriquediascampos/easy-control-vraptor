@@ -1,3 +1,4 @@
+
 .div-inline{
     display: inline;
 }
@@ -19,13 +20,26 @@
 *
 *
 * PADDING */
-.padding-t-p{ padding: 15px 0 15px 0;}
-.padding-l-r{ padding: 0 15px 0 15px;}
+.padding-t-p-15{ padding: 15px 0 15px 0;}
+.padding-l-r-15{ padding: 0 15px 0 15px;}
 
-.padding-t{ padding-top: 15px;}
-.padding-r{ padding-right: 15px;}
-.padding-b{ padding-bottom: 15px;}
-.padding-l{ padding-left: 15px;}
+.padding-t-15{ padding-top: 15px;}
+.padding-r-15{ padding-right: 15px;}
+.padding-b-15{ padding-bottom: 15px;}
+.padding-l-15{ padding-left: 15px;}
+
+/* 
+* MARGIN
+*/
+
+.margin-t-p{ margin: 15px 0 15px 0;}
+.margin-l-r{ margin: 0 15px 0 15px;}
+
+.margin-t{ margin-top: 15px;}
+.margin-r{ margin-right: 15px;}
+.margin-b{ margin-bottom: 15px;}
+.margin-l{ margin-left: 15px;}
+
 
 .esconder{ visibility: hidden}
 .ocultar{ display: none;}
@@ -37,3 +51,6 @@
 .align-center{ align-items: center;}
 
 .content-center{ justify-content: center;}
+
+.margin-dinamica { margin: 5px; }
+ 
