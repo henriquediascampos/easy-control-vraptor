@@ -1,0 +1,12 @@
+
+.caderneta{
+  background-image: url("../../imagens/caderneta.png");
+  background-size: contain;
+  width: 600px;
+  height: 900px;
+  justify-content: center;  
+}
+
+.elemento{
+    margin: auto;
+}

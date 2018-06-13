@@ -23,4 +23,9 @@
 		<appender-ref ref="stdout" />
 	</category>
 
+	<!-- coloquei esse pra testar -->
+	<category name="org.reflections.Reflections">
+		<priority value="INFO" />
+		<appender-ref ref="stdout" />
+	</category>
 </log4j:configuration>

@@ -1,4 +1,4 @@
-package br.com.caelum.vraptor.modelos.pais;
+package br.com.caelum.vraptor.modelos.login;
 
 import java.io.Serializable;
 
@@ -13,7 +13,7 @@ import javax.persistence.Table;
 @SuppressWarnings("serial")
 @Entity
 @Table(name = "pais")
-public class Pais implements Serializable{
+public class Login implements Serializable{
 
 	@Id
 	@SequenceGenerator(name = "mysequence", sequenceName = "seq_pais_id", initialValue=1, allocationSize=1)

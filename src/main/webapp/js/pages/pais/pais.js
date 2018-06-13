@@ -16,7 +16,7 @@ function buscar(nome){
 
 }
 function salvar(pais){
-  nome= pais;
+  nome= pais; 
   data = {nome};
   $.get("pais/salvar", data,
   function(data){

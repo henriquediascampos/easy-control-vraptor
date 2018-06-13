@@ -33,12 +33,12 @@
 		<property name="hbm2ddl.auto">create</property>
 		
 		<!-- Mapeamento das entidades -->
-		<mapping class="br.com.caelum.vraptor.modelos.pais.Pais" />
+	 <!-- 	<mapping class="br.com.caelum.vraptor.modelos.pais.Pais" />
 		<mapping class="br.com.caelum.vraptor.modelos.pessoa.Pessoa" />
 		<mapping class="br.com.caelum.vraptor.modelos.usuario.Usuario" />
-		<!-- <mapping class="br.com.caelum.vraptor.modelos.conta.Contas" />  -->
-
-
+		<mapping class="br.com.caelum.vraptor.modelos.conta.Contas"/>
+		<mapping class="br.com.caelum.vraptor.modelos.testeCompilacao.TesteCompilacao"/> -->
+ 
 	</session-factory>
 
 </hibernate-configuration>
