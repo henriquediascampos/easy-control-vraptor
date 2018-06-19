@@ -23,7 +23,11 @@ function eventos(){
 
     $('#login').click(()=>{
         $('#view-port').load("login.jsp");
-        // $('#view-port').load("pais.jsp");          
+        //location.reload();
+    });
+
+    $('#fazerCadastro').click(()=>{
+        $('#view-port').load("pais.jsp");
     });
 
     $("#btnEntrar").click(()=>{
@@ -33,4 +37,5 @@ function eventos(){
 
 $(document).ready(function(){
     eventos();
+    //$('#view-port').load("login.jsp");
 });

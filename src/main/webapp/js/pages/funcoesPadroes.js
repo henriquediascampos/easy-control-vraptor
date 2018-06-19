@@ -1,6 +1,6 @@
     
 let tipo = "";
-
+//criar um customEvent para observar todas as vezes que tiver um include de jsp no index.jsp
 $("[class*='ec_margin-']").each(function (){
     let valor = 0;
     let classes = $(this).attr("class");

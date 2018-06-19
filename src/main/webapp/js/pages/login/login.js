@@ -1,16 +1,20 @@
 
 function eventos(){
-    $("#btnEntrar").on("click", ()=>{
-        alert('patos');
-    });
 
-    $("#btnEntrar").click(()=>{
-        alert('patos');
-    });
 }
 $(document).ready(function(){
     eventos();
 
+    $('#email').on('keydown', function (e){
+        if( e.keyCode == 13){
+            $('#senha').focus();
+        }
+    });
+    $('#senha').on('keydown', function (e){
+        if( e.keyCode == 13){
+            $('#btnEntrar').focus();
+        }
+    });
     
 }); 
 
