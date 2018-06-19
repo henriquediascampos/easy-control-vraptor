@@ -6,16 +6,16 @@ var concat = require('gulp-concat');
 gulp.task('watch', function(){
   gulp.watch('./src/main/webapp/WEB-INF/**/*.jsp', ['jsp']);
   gulp.watch('./src/main/webapp/css/**/*.css', ['css']);
-  gulp.watch('./src/main/webapp/js/**/*.js', ['js']);
+  gulp.watch('./src/main/webapp/js/**/**/*.js', ['js']);
 });
 
 gulp.task('js', () => {
-  gulp.src('./src/main/webapp/js/**/*')
+  gulp.src('./src/main/webapp/js/**/**/*')
     .pipe(gulp.dest('/home/henrique/programas/apache-tomcat-8.5.29/webapps/vraptor-blank-project/js/'))
 });
 
 gulp.task('css', () => {
-  gulp.src('./src/main/webapp/css/**/*')
+  gulp.src('./src/main/webapp/css/**/**/*')
     .pipe(gulp.dest('/home/henrique/programas/apache-tomcat-8.5.29/webapps/vraptor-blank-project/css/'))
 });
 
