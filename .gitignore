@@ -6,3 +6,6 @@ out
 node_modules/
 .vscode/
 target/
+src/main/webapp/WEB-INF/classes/
+src/main/webapp/WEB-INF/classes/br/com/caelum/vraptor/modelos/pais/Pais.class
+src/main/webapp/imagens/teste.svg

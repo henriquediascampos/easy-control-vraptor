@@ -12,7 +12,7 @@ import javax.persistence.Table;
 
 @SuppressWarnings("serial")
 @Entity
-@Table(name = "pais")
+@Table(name = "login")
 public class Login implements Serializable{
 
 	@Id
@@ -21,7 +21,7 @@ public class Login implements Serializable{
 	@Column(name = "id")
 	private Long id;
 	
-	@Column(name = "pais_nome")
+	@Column
 	private String nome;
 
 	public Long getId() {
