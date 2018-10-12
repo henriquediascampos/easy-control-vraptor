@@ -7,6 +7,17 @@
     border-radius: 3px;
 }
 
+.field-2{
+    width: 500px;
+    height: 35px;
+    background-color: rgb(252, 252, 160);
+    font-size: 20pt;
+    border: 1px solid rgb(111, 155, 212);
+    border-radius: 3px;
+    padding-left: 10px;
+
+}
+
 .btn-entrar{
     height: 45px;
     width: 110px;

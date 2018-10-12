@@ -21,7 +21,7 @@
 					<ul>
 						<li><a id="home">HOME</a></li>
 						<li><a id="">LOGIN</a></li>
-						<li><a href="">TESTE 2</a></li>
+						<li><a id="fazerCadastro">Fazer Cadastro</a></li>
 						<li><a href="">TESTE 3</a></li>
 					</ul>
 				</div>
@@ -50,14 +50,21 @@
 			<div class="div-flex larg-alt-full content-center">
 			
 				<div id="view-port" class="view-port div-flex content-center">
-						<div class=" div-flex content-center">
-							<jsp:include page =  "../login/login.jsp" /> 
-						</div>	
+					<jsp:include page =  "../login/login.jsp" />
 
 				</div>
 			</div>
 		</div>
-		<footer class="div-flex rodape"></footer>
+		<footer class="div-flex rodape">
+			<select name="" id="">
+				<option value="">arroz1</option>
+				<option value="">arroz2</option>
+				<option value="">arroz3</option>
+				<option value="">arroz4</option>
+				<option value="">arroz5</option>
+
+			</select>
+		</footer>
 	</section>
 </div>
 </body>

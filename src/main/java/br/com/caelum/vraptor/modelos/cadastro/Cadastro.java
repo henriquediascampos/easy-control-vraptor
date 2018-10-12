@@ -1,4 +1,4 @@
-package br.com.caelum.vraptor.modelos.login;
+package br.com.caelum.vraptor.modelos.cadastro;
 
 import java.io.Serializable;
 
@@ -12,16 +12,16 @@ import javax.persistence.Table;
 
 @SuppressWarnings("serial")
 @Entity
-@Table(name = "login")
-public class Login implements Serializable{
+@Table(name = "cadastro")
+public class Cadastro implements Serializable{
 
 	@Id
-	@SequenceGenerator(name = "mysequence", sequenceName = "seq_pais_id", initialValue=1, allocationSize=1)
+	@SequenceGenerator(name = "mysequence", sequenceName = "seq_cada_id", initialValue=1, allocationSize=1)
 	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "mysequence")
 	@Column(name = "id")
 	private Long id;
 	
-	@Column
+	@Column(name = "cadastro_nome")
 	private String nome;
 
 	public Long getId() {

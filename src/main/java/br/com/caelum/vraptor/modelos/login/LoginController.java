@@ -1,7 +1,5 @@
 package br.com.caelum.vraptor.modelos.login;
 
-import java.util.List;
-
 import javax.inject.Inject;
 
 import br.com.caelum.vraptor.Controller;

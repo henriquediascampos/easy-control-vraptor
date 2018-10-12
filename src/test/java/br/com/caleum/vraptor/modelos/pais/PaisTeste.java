@@ -1,7 +1,5 @@
 package br.com.caleum.vraptor.modelos.pais;
 
-import javax.inject.Inject;
-
 import org.junit.Ignore;
 import org.junit.Test;
 
