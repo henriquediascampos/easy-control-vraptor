@@ -2,7 +2,7 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>br.com.caelum</groupId>
-	<artifactId>easy-control-1</artifactId>
+	<artifactId>easy-control</artifactId>
 	<version>4.2.1-SNAPSHOT</version>
 	<packaging>war</packaging>
 
@@ -108,7 +108,7 @@
 	</dependencies>
 
 	<build>
-		<finalName>easy-control-1</finalName>
+		<finalName>easy-control</finalName>
 		<!-- <outputDirectory>${basedir}/src/main/webapp/WEB-INF/classes</outputDirectory> -->
 		<plugins>
 			<plugin>
