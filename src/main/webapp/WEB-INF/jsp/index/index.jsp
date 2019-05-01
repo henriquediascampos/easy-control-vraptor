@@ -1,23 +1,28 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 
-<%@ taglib uri = "http://java.sun.com/jsp/jstl/core" prefix = "c" %>
+<!-- <%@ taglib uri = "http://java.sun.com/jsp/jstl/core" prefix = "c" %> -->
 
 <html lang="pt-br">
 <head>
 <link rel="stylesheet" href="css/estilos.css">
 <link rel="stylesheet" href="css/padroes.css">
+<link rel="stylesheet" href="css/index.css">
 <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
-<title>VRaptor Blank Project</title>
+<title>Easy-Control</title>
 </head>
 <body>
-<div class="view larg-alt-full">
-	<header>
-		<div class="menu">
-			<div class="div-flex  div-nav">
+<div class="view larg-alt-full">	
+	<video class="view larg-alt-full" autoplay muted loop id="myVideo">
+		<source src="./materiais/back2.mp4" type="video/mp4">
+		Your browser does not support HTML5 video.
+	  </video>
+	<header class="container">
+		<div class="div-flex">
+			<!-- <div class="div-flex">
 				<div class="logo">
 					<img src="./imagens/logo.png" alt="">
 				</div>
-				<div class="div-ul">
+				<div class="div-flex">
 					<ul>
 						<li><a id="home">HOME</a></li>
 						<li><a id="">LOGIN</a></li>
@@ -27,12 +32,13 @@
 				</div>
 			</div>
 			<div >
-				<img class="div-lapis" src="./imagens/lapis.png" alt="">
+				<img class="" src="./imagens/lapis.png" alt="">
 			</div>
-		</div>
+		</div> -->
 	</header>
 	<section class="div-flex flex-colunm larg-alt-full ec_margin-top-15">
 		<div class=" div-flex larg-alt-full padding-t">
+			<!--
 			<div class="menu-lateral div-flex flex-colunm">
 				<div class="div-flex flex-row-rev">
 					<img id="menu-open" class="btn-menu" src="./imagens/menuicon.png" alt="Menu">
@@ -53,7 +59,7 @@
 					<jsp:include page =  "../login/login.jsp" />
 
 				</div>
-			</div>
+			</div> -->
 		</div>
 		<footer class="div-flex rodape">
 			<select name="" id="">
