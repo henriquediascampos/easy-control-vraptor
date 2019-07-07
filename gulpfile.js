@@ -1,7 +1,7 @@
 var gulp = require('gulp');
 var concat = require('gulp-concat');
 //const clientPath = './src/main/webapp/';
-//const tomcatPath = '/home/henrique/programas/apache-tomcat-8.5.29/webapps/vraptor-blank-project/';
+const tomcatPath = '/home/henrique/programas/apache-tomcat-8.5.29/webapps/easy-control/';
 
 gulp.task('watch', function(){
   gulp.watch('./src/main/webapp/WEB-INF/**/*.jsp', ['jsp']);
@@ -11,17 +11,17 @@ gulp.task('watch', function(){
 
 gulp.task('js', () => {
   gulp.src('./src/main/webapp/js/**/**/*')
-    .pipe(gulp.dest('/home/henrique/programas/apache-tomcat-8.5.29/webapps/vraptor-blank-project/js/'))
+    .pipe(gulp.dest(`${tomcatPath}js/`))
 });
 
 gulp.task('css', () => {
   gulp.src('./src/main/webapp/css/**/**/*')
-    .pipe(gulp.dest('/home/henrique/programas/apache-tomcat-8.5.29/webapps/vraptor-blank-project/css/'))
+    .pipe(gulp.dest(`${tomcatPath}css/`))
 });
 
 gulp.task('jsp', () =>{
   gulp.src('./src/main/webapp/WEB-INF/jsp/**/*')
-    .pipe(gulp.dest('/home/henrique/programas/apache-tomcat-8.5.29/webapps/vraptor-blank-project/WEB-INF/jsp'))
+    .pipe(gulp.dest(`${tomcatPath}WEB-INF/jsp`))
 });
 
 // gulp.task('js', function() {
